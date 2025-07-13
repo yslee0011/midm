@@ -389,19 +389,18 @@
     </div>
 
     <!-- 모달 -->
-    <div id="promptModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 class="modal-title" id="modalTitle">프롬프트 제목</h2>
-            <div class="prompt-content" id="promptContent">
-                프롬프트 내용이 여기에 표시됩니다.
-            </div>
-            <div class="button-group">
-                <button class="btn btn-close" onclick="closeModal()">닫기</button>
-                <button class="btn btn-copy" onclick="copyPrompt()">복사하기</button>
-            </div>
-        </div>
+<div id="promptModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-actions-top">
+      <button class="btn btn-copy" onclick="copyPrompt()">복사하기</button>
+      <button class="btn btn-close" onclick="closeModal()">닫기</button>
     </div>
+    <h2 class="modal-title" id="modalTitle">프롬프트 제목</h2>
+    <div class="prompt-content" id="promptContent">
+      프롬프트 내용이 여기에 표시됩니다.
+    </div>
+  </div>
+</div>
 
     <!-- 토스트 메시지 -->
     <div class="toast" id="toast">
